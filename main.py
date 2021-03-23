@@ -4,8 +4,8 @@ Modify the function below to use a different procedure for generating a hash. Re
 def my_hashing_func(str, table_size):
     bytes_representation = str.encode()
 
-    sum = 0
+    product = 0
     for byte in bytes_representation:
-        sum += byte
+        product *= byte
 
-    return sum % table_size
+    return product % table_size
